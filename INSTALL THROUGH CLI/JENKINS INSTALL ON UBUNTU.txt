@@ -1,0 +1,47 @@
+sudo apt update
+
+sudo apt install openjdk-11-jdk -y
+
+
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+
+
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+
+
+sudo apt-get update
+
+
+sudo apt-get install jenkins -y
+
+
+sudo service jenkins status
+
+sudo service jenkins start
+
+sudo systemctl enable jenkins
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+     PASSWORD <XXXXXXXXXXXXX>  01dde9d533334aff8913604f98ef24b6
+
+then search on web 
+Instance_PUB_IP:8080
+
+
+
+https://www.hostinger.in/tutorials/how-to-install-jenkins-on-ubuntu/
+
+
+FOR COMPLETE JENKINS 
+https://youtu.be/WvcHQtyPcTs?si=qADXM3O-2dstKjY0
+
+
+
+
+
