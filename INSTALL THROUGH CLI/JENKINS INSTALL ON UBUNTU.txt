@@ -28,7 +28,7 @@ sudo systemctl enable jenkins
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
-     PASSWORD <XXXXXXXXXXXXX>  01dde9d533334aff8913604f98ef24b6
+     PASSWORD <XXXXXXXXXXXXX>  
 
 then search on web 
 Instance_PUB_IP:8080
